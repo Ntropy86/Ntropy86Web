@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+
+    cursor:none
+}
+body{
+    transition: all 0.5s ease;
+    /* background: url('./bg.jpg') no-repeat center; */
+    background-color: #c6c6c6;
+    background-size: cover;
+    /* height: 100vh; */
+    /* display: flex; */
+    /* overflow: hidden; */
+    align-items: center;
+    cursor:none;
+    
+
+    /* Scroll without the scrollbar! */
+
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Scroll without a scrollbar ends here  */
+
+.filler{
+    height: 20vh;
+}
+.content{
+color: #000;
+font-family: 'League Spartan';
+width: 75%;
+margin: 5% auto;
+text-align: center;
+
+}
+
+.content h1{
+    font-size: 170px;
+    text-align: justify;
+}
+
+.content p{
+    line-height: 25px;
+    text-align: justify; 
+}
+
+.cursor2{
+    position:fixed;
+    width: 25px;
+    height: 25px;
+    border:1px solid #fff;
+    border-radius: 50%;   /* this creates a circle from a square div */
+    left:0;
+    top:0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);  
+    transition: .1s ease-out;
+}
+.cursor{
+    position:fixed;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 50%;  
+    left:0;
+    top:0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);  
+    transition: .15 ease-out;
+
+}
+
+.cursor3{
+position: absolute;
+width: 5px;
+height:5px;
+border-radius: 50%;
+background-color: #fff;
+z-index: -1;
+}
+
+.toggle{
+    margin: 5% 5%;
+}
+
+.label{
+    float: right;
+    display: flex;
+    width: 50px;
+    height: 26px;
+    background-color: #111111;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    position: relative;
+}
+i{
+    float: right;
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+.checkbox{
+    float: right;
+    cursor: none;
+    display: none;
+}
+
+
+.ball{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 2px;
+    left: 2px;
+    transition: all .3s ease;
+}
+
+.checkbox:checked + .label{
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+    background-color: #000;
+}
+.nav-wrapper{
+    width: 100%;
+    height: 5vh;
+    background-color: #c6c6c6;
+    padding-top:1%;
+    
+}
+hr {
+    height: 20px;
+    border: 0;
+    box-shadow: 0 12px 12px -12px rgb(0, 0, 0);
+}
+
+nav{
+   
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hovering{
+    transition: all 0.3s ease;
+
+}
+a{
+    cursor: none;
+}
+
+span{
+    display: inline-block;
+    font-family: "Nexa";
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: transform 0.1s linear;
+    opacity: 0.5;
+
+}
+
+
+/* .active{
+    border-bottom: 5px solid white;
+} */
+.hover{
+    align-items: center;
+    cursor: none;
+    transition: 0.1s linear;
+    transform: scale(1.5,1.5);
+    
+}
+
+.dark-mode-body{
+    background-color: #393939;
+    color: #111111;
+    transition: all 0.5s ease;
+}
+
+.dark-mode-text{
+    color:#fff
+}
+
+.dark-mode-logo{
+    color:cyan
+}
+
+
+@media(max-width:900px){
+    .hovering{
+        width:100% ;
+        padding:20px 0 ;
+    }
+    .nav-wrapper{
+       background-color: #c6c6c667; 
+    }
+    nav{
+        margin-bottom: 300px;
+        padding: 0;
+    }
+}
+
+@media(min-width:450px){
+    nav{
+        margin-bottom: 300px;
+        padding: 0;
+    }
+
+    .nav-wrapper{
+        background-color: transparent;
+    }
+}
+
