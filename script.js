@@ -7,7 +7,7 @@ const navbar=document.querySelector('.nav-ele');
 const headers=document.querySelector('h1');
 const p=document.querySelector('p');
 const checkbox=document.querySelector('#checkbox');
-alert("js Loaded")
+
 (function () {
 
     const link = document.querySelectorAll('nav > .hovering');
