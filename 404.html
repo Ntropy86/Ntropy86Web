@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset=UTF-8 />
-    <link rel="stylesheet" type="text/css" href="./404 page/404.css" />
+    <link rel="stylesheet" type="text/css" href="./404/404.css" />
     <title>Under Construction</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
         <p>Maybe it's Under Developement?</p>
       </div>
     
-    <script src="./404 page/Lib/three.min.js page/"></script>
+    <script src="./404/Lib/three.min.js"></script>
     <script>
     let scene,camera, renderer, cloudParticles = [], flash, rain, rainGeo, rainCount = 15000;
     function init() {
@@ -61,7 +61,7 @@
       rain = new THREE.Points(rainGeo,rainMaterial);
       scene.add(rain);
       let loader = new THREE.TextureLoader();
-      loader.load("./Lib/smoke-1.png", function(texture){
+      loader.load("./404/Lib/smoke-1.png", function(texture){
 
         cloudGeo = new THREE.PlaneBufferGeometry(500,500);
         cloudMaterial = new THREE.MeshLambertMaterial({

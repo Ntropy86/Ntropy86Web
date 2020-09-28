@@ -6,6 +6,9 @@
     color: azure;
 
 }
+body{
+    overflow: hidden;
+}
 
 
 .Texts{
