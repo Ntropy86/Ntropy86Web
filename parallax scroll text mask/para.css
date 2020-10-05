@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Nexa,Montserrat,Roboto;
+}
+
+
+.sec{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.sec .container{
+    text-align:center;
+}
+
+.sec .container h2{
+    font-size: 24vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-attachment: fixed;
+}
+
+.sec:nth-child(1) h2
+{
+    background-image: url('./fire.jpg');
+}
+.sec:nth-child(2) h2
+{
+    background-image: url('./water.jpg');
+}
+.sec:nth-child(3) h2
+{
+    background-image: url('./ice.jpg');
+}
+
+.sec .container p{
+    max-width: 800px;
+    margin: 0,auto;
+    padding: 0 20px;
+    align-items: center;
+    margin: 0;
+    float: right;
+
+}
+
+.sec .container a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    /* margin-top: 20px; */
+}
+
+.zoom{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(bg.jpg);
+    background-size: cover;
+
+}
+
+.zoom:before{
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    width: 100% ;
+    height:20vh;
+    z-index: 100;
+    background: linear-gradient(transparent,#ffffff);
+}
+
+.zoom #layer1{
+    position: absolute;
+    width: 100%;
+    left: 40%;
+    top: -10%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.zoom #layer2{
+    position: absolute;
+    width: 100%;
+    left: 40%;
+    top: -10%;
+    transform: translateX(-40%);
+    z-index: 9;
+}
+.zoom #text{
+     position: absolute;
+    width: 100%;
+    top: -5%;
+    
+    /* left: 40%; */
+    transform: translateY(20%);
+    z-index: 1; 
+}
+
+.content
+{
+    padding:100px;
+    box-sizing: border-box;
+    
+}
